@@ -20,7 +20,8 @@ exports.config = {
     chromeOptions: {
       args: [
         "--disable-infobars",
-        "--start-maximized"
+        "--start-maximized",
+        //"--headless"
       ]
     }
   },
