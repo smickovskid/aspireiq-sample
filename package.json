@@ -1,0 +1,35 @@
+{
+  "name": "cv-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "protractor.conf.js",
+  "scripts": {
+    "postinstall": "webdriver-manager update",
+    "test": "protractor protractor.conf.js",
+    "posttest": "allure generate allure-results --clean -o allure-report"
+  },
+  "keywords": [],
+  "author": "Damjan",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.16",
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "~8.9.4",
+    "allure-commandline": "^2.13.0",
+    "blue-harvest": "^0.3.1",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "path": "^0.12.7",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.11.0",
+    "typescript": "3.2.4"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.11",
+    "chai": "^4.2.0",
+    "csvtojson": "^2.0.10",
+    "jasmine-allure-reporter": "^1.0.2",
+    "protractor-screenshot-utils": "^1.0.5",
+    "xlsx": "^0.16.1"
+  }
+}
